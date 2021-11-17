@@ -1,35 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<!-- Normalize -->
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/style.min.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<title>Frontend Mentor | Profile card component</title>
+	</head>
+	<body>
+		<!-- Container -->
+		<main class="container">
+			<!-- Card -->
+			<article class="card">
+				<div class="card__bg-container">
+					<img
+						src="./images/bg-pattern-card.svg"
+						alt="bg-pattern-card"
+						class="card__bg-img"
+					/>
+				</div>
+				<div class="card__body">
+					<img
+						src="./images/image-victor.jpg"
+						alt="Img Victor"
+						class="card__profile"
+					/>
+					<h1 class="card__title">Victor Crest <span>26</span></h1>
+					<p class="card__city">London</p>
+				</div>
+				<div class="card__footer">
+					<div class="card__stats">
+						<h3>80K</h3>
+						<p>Followers</p>
+					</div>
+					<div class="card__stats">
+						<h3>803K</h3>
+						<p class="">Likes</p>
+					</div>
+					<div class="card__stats">
+						<h3>1.4K</h3>
+						<p>Photos</p>
+					</div>
+				</div>
+			</article>
+			<!-- Card -->
+		</main>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://github.com/EngelReyes23" target="_blank">EngelReyes23</a
+			>.
+		</div>
+		<!-- Container -->
+	</body>
 </html>
